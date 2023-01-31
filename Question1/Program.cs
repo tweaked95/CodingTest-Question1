@@ -16,7 +16,7 @@ namespace Question1
         public static int Solution(int[] A)
         {
 
-            List<int> filteredList = A.Where(a => a >= 0).OrderBy(a => a).ToList();
+            List<int> filteredList = A.Where(a => a >= 0).Distinct().OrderBy(a => a).ToList();
 
             int minVal = 1;
 
