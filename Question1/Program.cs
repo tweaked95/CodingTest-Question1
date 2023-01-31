@@ -7,38 +7,38 @@ namespace Question1
 {
     class Program
     {
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
             Random r = new Random();
             int N = r.Next(0, 100);
-            int[] A = new int[N];
+            int[] A = new int[30];
 
             for (int i = 0; i < A.Length; i++)
             {
-                A[i] = r.Next(-1000, 1000);
+                A[i] = r.Next(-20, 20);
             }
 
-            for (int i = 0; i < A.Length; i++)
-            {
-                Console.WriteLine(A[i]);
-            }
+            List<int> filteredList = A.Where(a => a >= 0).Distinct().OrderBy(a=>a).ToList();
 
-            Console.WriteLine("\n");
-            Array.Sort(A);
-
-            for (int i = 0; i < A.Length; i++)
-            {
-                Console.WriteLine(A[i]);
-            }
-            Console.WriteLine("\n");
-
-            List<int> filtered = A.Where(a => a >= 0).ToList();
-
-            foreach (var item in filtered)
+            foreach (var item in filteredList)
             {
                 Console.WriteLine(item);
             }
             Console.WriteLine("\n");
+
+            int minVal = 1;
+
+            foreach (int item in filteredList)
+            {
+                if (minVal < item)
+                {
+                    break;
+                }
+                minVal = item + 1;
+            }
+
+            Console.WriteLine(minVal);
+            return minVal;
         }
     }
 }
