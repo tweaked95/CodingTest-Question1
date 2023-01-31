@@ -6,13 +6,16 @@ namespace Question1
 {
     class Program
     {
-        static int Main(string[] args)
+        static void Main(string[] args)
         {
-            int[] A = new int[args.Length];
-            for (int i = 0; i < args.Length; i++)
-            {
-                A[i] = Convert.ToInt32(args[i]);
-            }
+            int[] array = new int[] { -1, 2, 5, -6, 10, 1, 3, 2, -6, -4 };
+
+            Console.WriteLine(Solution(array));
+        }
+
+        public static int Solution(int[] A)
+        {
+
             List<int> filteredList = A.Where(a => a >= 0).OrderBy(a => a).ToList();
 
             int minVal = 1;
@@ -31,7 +34,6 @@ namespace Question1
                 minVal = item + 1;
             }
 
-            Console.WriteLine(minVal);
             return minVal;
         }
     }
