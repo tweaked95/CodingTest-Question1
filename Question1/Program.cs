@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Question1
@@ -21,19 +23,22 @@ namespace Question1
                 Console.WriteLine(A[i]);
             }
 
+            Console.WriteLine("\n");
             Array.Sort(A);
 
             for (int i = 0; i < A.Length; i++)
             {
                 Console.WriteLine(A[i]);
             }
+            Console.WriteLine("\n");
 
-            A.Where((a, index) => a >= 0);
+            List<int> filtered = A.Where(a => a >= 0).ToList();
 
-            for (int i = 0; i < A.Length; i++)
+            foreach (var item in filtered)
             {
-                Console.WriteLine(A[i]);
+                Console.WriteLine(item);
             }
+            Console.WriteLine("\n");
         }
     }
 }
