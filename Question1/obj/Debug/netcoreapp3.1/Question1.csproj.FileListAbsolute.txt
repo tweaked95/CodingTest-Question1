@@ -1,7 +1,4 @@
-D:\Programming\CodingTest\Question1\bin\Debug\netcoreapp3.1\Question1.exe
 D:\Programming\CodingTest\Question1\bin\Debug\netcoreapp3.1\Question1.deps.json
-D:\Programming\CodingTest\Question1\bin\Debug\netcoreapp3.1\Question1.runtimeconfig.json
-D:\Programming\CodingTest\Question1\bin\Debug\netcoreapp3.1\Question1.runtimeconfig.dev.json
 D:\Programming\CodingTest\Question1\bin\Debug\netcoreapp3.1\Question1.dll
 D:\Programming\CodingTest\Question1\bin\Debug\netcoreapp3.1\Question1.pdb
 D:\Programming\CodingTest\Question1\obj\Debug\netcoreapp3.1\Question1.csproj.AssemblyReference.cache
@@ -11,4 +8,7 @@ D:\Programming\CodingTest\Question1\obj\Debug\netcoreapp3.1\Question1.AssemblyIn
 D:\Programming\CodingTest\Question1\obj\Debug\netcoreapp3.1\Question1.csproj.CoreCompileInputs.cache
 D:\Programming\CodingTest\Question1\obj\Debug\netcoreapp3.1\Question1.dll
 D:\Programming\CodingTest\Question1\obj\Debug\netcoreapp3.1\Question1.pdb
+D:\Programming\CodingTest\Question1\bin\Debug\netcoreapp3.1\Question1.exe
+D:\Programming\CodingTest\Question1\bin\Debug\netcoreapp3.1\Question1.runtimeconfig.json
+D:\Programming\CodingTest\Question1\bin\Debug\netcoreapp3.1\Question1.runtimeconfig.dev.json
 D:\Programming\CodingTest\Question1\obj\Debug\netcoreapp3.1\Question1.genruntimeconfig.cache

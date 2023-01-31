@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -9,24 +8,19 @@ namespace Question1
     {
         static int Main(string[] args)
         {
-            Random r = new Random();
-            int N = r.Next(0, 100);
-            int[] A = new int[30];
-
-            for (int i = 0; i < A.Length; i++)
+            int[] A = new int[args.Length];
+            for (int i = 0; i < args.Length; i++)
             {
-                A[i] = r.Next(-20, 20);
+                A[i] = Convert.ToInt32(args[i]);
             }
-
-            List<int> filteredList = A.Where(a => a >= 0).Distinct().OrderBy(a=>a).ToList();
-
-            foreach (var item in filteredList)
-            {
-                Console.WriteLine(item);
-            }
-            Console.WriteLine("\n");
+            List<int> filteredList = A.Where(a => a >= 0).OrderBy(a => a).ToList();
 
             int minVal = 1;
+
+            if (filteredList.Count == 0)
+            {
+                return minVal;
+            }
 
             foreach (int item in filteredList)
             {
